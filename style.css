@@ -1,6 +1,7 @@
 body {
     background-color: gray;
     text-align: center;
+    
 }
 
 header {
@@ -10,12 +11,12 @@ header {
     margin: 1em;
 }
 
-.headerDiv{
+.headerDiv {
     color: goldenrod;
     text-decoration: underline;
     text-shadow: 2px 2px 5px red;
     font-size: 50px;
-  
+
 }
 
 nav {
@@ -26,8 +27,15 @@ nav {
     height: 12vh;
 }
 
-.sSite{
-    display: flex;
+.aSite {
+    border: solid green;
+    background-color: green;
+    margin: 1em;
+    padding: 2em;
+    font-size: 20px;
+}
+
+.wSite {
     border: solid blue;
     background-color: blue;
     margin: 1em;
@@ -35,8 +43,24 @@ nav {
     font-size: 20px;
 }
 
+.sSite {
+    border: solid red;
+    background-color: red;
+    margin: 1em;
+    padding: 2em;
+    font-size: 20px;
+}
+
+.rSite {
+    border: solid yellow;
+    background-color: yellow;
+    margin: 1em;
+    padding: 2em;
+    font-size: 20px;
+}
+
 .sectionContainer {
-    display: flex;
+    /* display: flex; */
     border: dashed green;
     border-width: 4px;
     margin: 1em;
@@ -45,23 +69,32 @@ nav {
 section {
     border: solid purple;
     border-width: 0.2px;
-    height: 9vh;
-    margin: 1em;
+    height: 100%;
+    
 }
 
-table{
+table, th, td {
     border: solid black;
-
 }
 
-tr{
-
-border: solid black;}
-
-.prodImg{
-    height: 50%;
-    width: 50%;
+.prodImage{
+    display: inline-block
+    
 }
-.rTxt:hover{
-    font-size: 200px;
+.prodImg {
+    justify-content: flex-start;
+    flex-direction: row;
+    border: solid black;
+    border-radius: 20%;
+    margin: 2em;
+    height: 25%;
+    width: 25%;
+    
+}
+
+.rTxt{
+    font-size: 50px;
+}
+.rTxt:hover {
+    font-size: 100px;
 }
